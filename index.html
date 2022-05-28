@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lob Switch PreToPost</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="rating__section">
+        <div class="container">
+            <div class="row">
+                <div class="heading__wrapper">
+                    <h1 class="form__heading">Partner Checklist Form</h1>
+                </div>
+                <form class="rating__from">
+                    <div class="form__header">
+                        <div class="input__div">
+                            <div class="input__wrapper">
+                                <input type="text" class="form__control" id="rating__name" required>
+                                <label for="form__control">Candidate Name</label>
+                            </div>
+                            <div class="input__wrapper">
+                                <input type="text" class="form__control" id="rating__email" required>
+                                <label for="form__control">Candidate Email ID</label>
+                            </div>
+                        </div>
+                        <div class="main__rating d-none">
+                            <p class="dynamic__rating">0</p>
+                            <div class="rating__star">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating__question__wrapper">
+                        <div class="wrapper__col left__col">
+                            <div class="item" id="ques__0">
+                                <p class="rating__ques">Candidates Experience in Front End Development</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__0">
+                            </div>
+                            <div class="item" id="ques__1">
+                                <p class="rating__ques">Candidates proficiency in HTML5 /CSS</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__1">
+                            </div>
+                            <div class="item" id="ques__2">
+                                <p class="rating__ques">Does the Candidate has CSS preprocessor experience</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__2">
+                            </div>
+                            <div class="item" id="ques__3">
+                                <p class="rating__ques">Candidate Experience on RWD / PWA</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__3">
+                            </div>
+                            <div class="item" id="ques__4">
+                                <p class="rating__ques">Candidates experience using boiler plates like Bootstrap</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__4">
+                            </div>
+                            <div class="item" id="ques__5">
+                                <p class="rating__ques">Experience in handling multiple browser supports</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__5">
+                            </div>
+                            <div class="item" id="ques__6">
+                                <p class="rating__ques">Experience in JavaScript ES6</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__6">
+                            </div>
+                            <div class="item" id="ques__7">
+                                <p class="rating__ques">Hands on Experience in JavaScript framework AngularJS / ReactJS/
+                                    VueJS</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__7">
+                            </div>
+                            <div class="item" id="ques__8">
+                                <p class="rating__ques">Experience in state management in JS Framework</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__8">
+                            </div>
+                            <div class="item" id="ques__9">
+                                <p class="rating__ques">REST API Integration Experience</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__9">
+                            </div>
+                            <div class="item" id="ques__10">
+                                <p class="rating__ques">Does the candidate has Atomic Design Experience</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__10">
+                            </div>
+                            <div class="item" id="ques__11">
+                                <p class="rating__ques">Experience working in NPM package manager</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__11">
+                            </div>
+                            <div class="item" id="ques__12">
+                                <p class="rating__ques">Experience in writing test cases</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__12">
+                            </div>
+                            <div class="item" id="ques__13">
+                                <p class="rating__ques">AEM UI Development/ Integration experience</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__13">
+                            </div>
+                            <div class="item" id="ques__14">
+                                <p class="rating__ques">Does the Candidate has Web Accessbility Experience</p>
+                                <span rating-value="0" class="fa fa-star"></span>
+                                <span rating-value="1" class="fa fa-star"></span>
+                                <span rating-value="2" class="fa fa-star"></span>
+                                <span rating-value="3" class="fa fa-star"></span>
+                                <span rating-value="4" class="fa fa-star"></span>
+                                <input type="hidden" value="" class="hidden__input" id="input__14">
+                            </div>
+                        </div>
+                        <div class="wrapper__col">
+                            <button class="form__submit__cta" type="button" disabled>SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
